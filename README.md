@@ -26,7 +26,7 @@
 3. 默认快捷键：
 
 ```text
-Ctrl + Alt + Q
+Win + Ctrl + T
 ```
 
 ## 配置
