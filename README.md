@@ -1,48 +1,49 @@
 # TopmostToggle
 
-A lightweight Windows tray utility for toggling "always on top" on the active window.
+一个轻量的 Windows 窗口置顶托盘小工具。
 
-It exists for one reason: if you only need window pinning, you may not want a larger utility suite running all the time.
+这个工具只做一件事：切换当前窗口的“始终置顶”。  
+如果你只需要这个功能，不想为了一个点状需求常驻整套大型工具，它会更合适。
 
-## Features
+## 功能
 
-- Toggle always-on-top for the active window
-- Clear all windows pinned by this tool
-- Tray menu with sound and startup toggles
-- Microsoft-style toggle sounds using:
+- 切换当前活动窗口置顶
+- 取消所有由本工具置顶过的窗口
+- 托盘菜单控制提示音、开机启动、重新加载
+- 使用微软同款提示音：
   - `C:\Windows\Media\Speech On.wav`
   - `C:\Windows\Media\Speech Sleep.wav`
 
-## Requirements
+## 依赖
 
 - Windows
 - [AutoHotkey v2](https://www.autohotkey.com/)
 
-## Usage
+## 用法
 
-1. Install AutoHotkey v2.
-2. Run `TopmostToggle.ahk`.
-3. Use the default hotkey:
+1. 安装 AutoHotkey v2
+2. 运行 `TopmostToggle.ahk`
+3. 默认快捷键：
 
 ```text
 Ctrl + Alt + Q
 ```
 
-## Configuration
+## 配置
 
-Copy `TopmostToggle.example.ini` to `TopmostToggle.ini` if needed, then edit the values.
+可参考 `TopmostToggle.example.ini`，自行创建或修改 `TopmostToggle.ini`。
 
-Current options:
+当前支持的配置项：
 
 - `Hotkey`
 - `Sound`
 - `Startup`
 
-After editing `TopmostToggle.ini`, use the tray menu item `重新加载` to apply changes.
+修改 `TopmostToggle.ini` 后，需要在托盘菜单里点击 `重新加载` 才会生效。
 
-## Hotkey Format
+## 快捷键写法
 
-Examples:
+示例：
 
 ```text
 #^t = Win + Ctrl + T
@@ -50,11 +51,11 @@ Examples:
 ^!q = Ctrl + Alt + Q
 ```
 
-## Files
+## 文件说明
 
-- `TopmostToggle.ahk` - main script
-- `TopmostToggle.example.ini` - example config
+- `TopmostToggle.ahk`：主脚本
+- `TopmostToggle.example.ini`：示例配置
 
-## License
+## 许可证
 
 MIT
